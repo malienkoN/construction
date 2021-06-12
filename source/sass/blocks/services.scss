@@ -1,0 +1,21 @@
+.services__item {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: auto auto;
+  align-items: center;
+
+  &:nth-of-type(2) {
+    padding: 0 0 0 70px;
+  }
+}
+
+.services__item + .services__item {
+  margin-top: 35px;
+}
+
+.services__item-title {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: $white;
+  font-weight: 600;
+}
