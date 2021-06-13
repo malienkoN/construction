@@ -7,6 +7,10 @@ window.addEventListener('load', function () {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return ('0' + current).slice(-2) + ' <span>of</span> ' + ('0' + total).slice(-2);
+            }
         },
         breakpoints: {
             // when window width is >= 320px
