@@ -13,6 +13,36 @@ body {
   line-height: 1.3;
   color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
+
+  position: relative; /* for lines and side gradient */
+
+  &:before,
+  &:after {
+    content: '';
+    width: 195px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -5;
+  }
+
+  &:before {
+    left: 0;
+    background: linear-gradient(270deg, #000000 -48.31%, rgba(0, 0, 0, 0) 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &:after {
+    right: 0;
+    background: linear-gradient(270deg, #000000 -48.31%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  @media (max-width: 1199px) {
+    &:before,
+    &:after {
+      width: 91px;
+    }
+  }
 }
 
 .container {
@@ -20,6 +50,10 @@ body {
   max-width: 1065px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 767px) {
+    padding: 0 10px;
+  }
 }
 
 .img {
@@ -68,5 +102,34 @@ a {
 
   &:focus {
     outline: none;
+  }
+}
+
+.screen-step__line {
+  width: 1px;
+  background:  rgba(255, 255, 255, .1);
+  position: absolute;
+  height: 100%;
+  z-index: -10;
+  top: 0;
+
+  &:nth-child(1) {
+    left: 16.6vw;
+  }
+
+  &:nth-child(2) {
+    right: 16.6vw;
+  }
+
+  &:nth-child(3) {
+    left: 33.2vw;
+  }
+
+  &:nth-child(4) {
+    right: 33.2vw;
+  }
+
+  &:nth-child(5) {
+    left: 50vw;
   }
 }

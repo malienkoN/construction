@@ -6,3 +6,17 @@
   position: relative;
   padding-top: 134px;
 }
+
+@media (max-width: 1279px) {
+  .section--intro {
+    padding-top: 104px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section--intro {
+    padding-top: 121px;
+    background: url('../img/intro-bg-mobile.jpg') no-repeat center;
+    background-size: cover;
+  }
+}

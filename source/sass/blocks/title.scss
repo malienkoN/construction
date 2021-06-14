@@ -13,3 +13,25 @@
   text-transform: uppercase;
   color: $white;
 }
+
+@media (max-width: 1279px) {
+  .title-sup {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    text-align: center;
+  }
+
+  .title-sup {
+    text-align: center;
+  }
+}
