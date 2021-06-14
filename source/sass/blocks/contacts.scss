@@ -43,3 +43,9 @@
 .contacts__content-item + .contacts__content-item {
   margin-top: 20px;
 }
+
+@media (max-width: 1279px) {
+  .contacts__content {
+    padding: 60px 21px 54px 26px;
+  }
+}

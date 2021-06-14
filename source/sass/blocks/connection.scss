@@ -41,7 +41,7 @@
 }
 
 .connection__input-wrapper + .connection__input-wrapper {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .connection__input,
@@ -67,7 +67,7 @@
 }
 
 .connection__textarea {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding: 11px;
   resize: none;
 }
@@ -115,5 +115,26 @@
   &:hover {
     border-color: #00b455;
     width: 134px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .connection__input-wrapper + .connection__input-wrapper {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .connection__inputs {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .connection__input-wrapper + .connection__input-wrapper {
+    margin: 15px 0 0;
+  }
+
+  .connection__text {
+    text-align: center;
   }
 }
