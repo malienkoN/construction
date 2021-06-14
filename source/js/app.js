@@ -36,4 +36,11 @@ window.addEventListener('load', function () {
             },
         },
     });
+
+    $('.accordion__item-trigger').click(function () {
+        $(this).next('.accordion__item-content').slideToggle();
+        $(this).find('.svg-btn__arrow').toggleClass('rotate');
+    });
+
+    $('.accordion__item-trigger:first').click();
 });

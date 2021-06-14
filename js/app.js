@@ -1,0 +1,1 @@
+window.addEventListener("load",(function(){new Swiper(".mySwiper",{slidesPerView:3.5,spaceBetween:20,centeredSlides:!0,loop:!0,pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{320:{slidesPerView:1,spaceBetween:20},768:{slidesPerView:2.5,spaceBetween:20},1280:{slidesPerView:3.5,spaceBetween:20},1600:{slidesPerView:4.5,spaceBetween:20}}})}));

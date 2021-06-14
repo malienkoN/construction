@@ -18,6 +18,10 @@
     padding-top: 121px;
     background: url('../img/intro-bg-mobile.jpg') no-repeat center;
     background-size: cover;
+
+    &-development {
+      background-image: url('../img/intro-bg-mobile-development.jpg');
+    }
   }
 
   .section--contacts {
