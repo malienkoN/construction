@@ -36,6 +36,37 @@ p {
   margin: 0;
 }
 
-.input {
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+.input {
+  display: block;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }

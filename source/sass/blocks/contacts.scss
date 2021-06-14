@@ -1,0 +1,45 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__map {
+  height: 444px;
+  width: 100%;
+  background: url('../img/contacts-map-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.contacts__content {
+  padding: 60px 50px 58px 37px;
+  width: 290px;
+  background-color: #181818;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #9e9e9e;
+  }
+
+  a {
+    display: block;
+    color: $white;
+  }
+
+  a + a {
+    margin-top: 5px;
+  }
+
+  address {
+    font-style: normal;
+    color: $white;
+  }
+}
+
+.contacts__content-item + .contacts__content-item {
+  margin-top: 20px;
+}
