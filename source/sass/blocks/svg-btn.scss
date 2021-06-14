@@ -1,0 +1,49 @@
+.svg-btn {
+
+}
+
+.svg-btn {
+  display: flex;
+  height: 100%;
+  margin-left: 20px;
+  vertical-align: top;
+  position: relative;    width: 28px;
+}
+
+.svg-btn__shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 26px;
+  height: 100%;
+}
+.svg-btn__shape svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.svg-btn__shape svg:first-child {
+  opacity: .3;
+}
+.svg-btn__shape svg:nth-child(2) path {
+  stroke-dashoffset: 209.057; stroke-dasharray: 319.057, 329.057;
+}
+
+.svg-btn:hover .svg-btn__shape svg:nth-child(2) path{
+  stroke-dashoffset: 209.057; stroke-dasharray: 319.057, 329.057;
+  animation: dash 1s linear forwards;
+}
+
+.svg-btn__shape .svg-btn__arrow {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
