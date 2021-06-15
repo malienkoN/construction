@@ -133,3 +133,10 @@ a {
     left: 50vw;
   }
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  display: none;
+}

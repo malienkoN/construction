@@ -1,0 +1,76 @@
+.location__map {
+  margin: 0 -50px;
+  height: 544px;
+  background: url('../img/contacts-map-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.location {
+  position: relative;
+}
+
+.location__list {
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+
+  width: 750px;
+  display: flex;
+  padding: 9px 0;
+  background-color: #242424;
+  margin: 0;
+  list-style: none;
+  color: $white;
+
+  p {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  li + li {
+    border-left: 1px solid rgba(255, 255, 255, .1);
+  }
+}
+
+@media (max-width: 1279px) {
+  .location__map {
+    margin: 0 -20px;
+  }
+
+  .location__list {
+    width: 710px;
+
+    li {
+      padding: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .location__map {
+    margin: 0 -10px;
+  }
+
+  .location__list {
+    background: none;
+    margin-top: 10px;
+    width: 100%;
+    position: static;
+    display: block;
+
+    li {
+      padding: 15px 20px;
+      background: transparent;
+      border: 1px solid #929292;
+    }
+
+    li + li {
+      margin-top: 10px;
+      border: 1px solid #929292;
+    }
+  }
+}

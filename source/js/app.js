@@ -43,4 +43,29 @@ window.addEventListener('load', function () {
     });
 
     $('.accordion__item-trigger:first').click();
+
+
+
+    let items = document.querySelectorAll('.we-did__inner .we-did__item');
+    let loadMoreBtn = document.querySelector('.we-did__btn');
+    let maxItems = 6;
+    let hiddenClass = 'visually-hidden';
+
+    [].forEach.call(items, function (item, idx) {
+        if (idx > maxItems - 1) {
+            item.classList.add(hiddenClass);
+        }
+    });
+
+    loadMoreBtn.addEventListener('click', function () {
+        [].forEach.call(document.querySelectorAll('.' + hiddenClass), function (item, idx) {
+            if (idx < maxItems + 3) {
+                item.classList.remove(hiddenClass);
+            }
+
+            if (document.querySelectorAll('.' + hiddenClass).length === 0) {
+                loadMoreBtn.style.display = 'none';
+            }
+        });
+    });
 });

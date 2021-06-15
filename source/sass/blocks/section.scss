@@ -11,6 +11,12 @@
   .section--intro {
     padding-top: 104px;
   }
+
+  .section--intro-object {
+    padding-top: 217px;
+    background: url('../img/intro-bg-tablet-object.jpg') no-repeat center;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 767px) {
@@ -26,6 +32,14 @@
     &-works {
       background-image: url('../img/intro-bg-mobile-works.jpg');
     }
+
+    &-object {
+      background-image: url('../img/intro-bg-mobile-object.jpg');
+    }
+  }
+
+  .section--intro-object {
+    padding-top: 132px;
   }
 
   .section--contacts {

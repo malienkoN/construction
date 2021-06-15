@@ -1,0 +1,43 @@
+.data-object {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.data-object__item {
+  background: transparent;
+  border: 1px solid #929292;
+
+  padding: 25px 20px;
+  color: $white;
+
+  p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  span {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .data-object {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .data-object__item {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .data-object {
+    grid-template-columns: 1fr;
+  }
+}
