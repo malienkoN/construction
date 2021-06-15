@@ -8,6 +8,10 @@
   &--project {
     max-width: 300px;
   }
+
+  &--works {
+    max-width: 350px;
+  }
 }
 
 .intro__bg {
@@ -23,6 +27,10 @@
   &--development {
     background-image: url('../img/intro-development-bg.jpg');
   }
+
+  &--works {
+    background-image: url('../img/intro-works-bg.jpg');
+  }
 }
 
 .intro__bg-tablet {
@@ -34,6 +42,10 @@
 
   &--development {
     background-image: url('../img/intro-bg-tablet-development.jpg');
+  }
+
+  &--works {
+    background-image: url('../img/intro-bg-tablet-works.jpg');
   }
 }
 
